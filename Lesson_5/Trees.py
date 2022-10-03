@@ -18,12 +18,12 @@ class Pine(Tree):
     def __init__(self, roots,
                  branches, needles):
         self._needles = needles
-        super().__init__(roots, branches)
+        # super().__init__(roots, branches)
         self._type = "Pine"
 
-    def __str__(self):
-        return (super().__str__() + " "
-                + str(self._needles))
+    # def __str__(self):
+    #     return (super().__str__() + " "
+    #             + str(self._needles))
 
     def grow_cones(self):
         print("shut up and give me some water")
@@ -32,9 +32,9 @@ class Pine(Tree):
 a = Tree(3, 5)
 b = Pine(3, 6, 0)
 print(a)
-print(b)
+print(b._needles)
 b.grow_cones()
-a.grow_cones()
+
 
 
 

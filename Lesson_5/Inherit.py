@@ -12,4 +12,6 @@ class C(A, B):
 
 c = C()
 print(c.x)
+A.x = 1
+print(c.x)
 
