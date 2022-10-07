@@ -27,7 +27,7 @@ class Node:
         return str(self.get_value())
 
 class List:
-    def __init__(self):
+    def __init__(self, collection = None):
         self._start_pointer = None
         self._finish_pointer = None
         self._length = 0
@@ -65,5 +65,7 @@ class List:
 A = List()
 for i in range(5):
     A.append(i)
+for element in A:
+    print(element)
 print(A)
 
