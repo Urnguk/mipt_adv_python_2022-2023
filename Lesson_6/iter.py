@@ -1,14 +1,13 @@
 class StackIterator:
     def __init__(self, stack):
         self._stack = stack
-        self._index = len(stack) - 1
+        self._index = len(stack)
 
     def __next__(self):
-        res = self._stack._collection[self._index]
+        self._index -= 1
         if self._index < 0:
             raise StopIteration
-        self._index -= 1
-        return res
+        return self._stack[self._index]
 
 
 class Stack:
@@ -18,6 +17,9 @@ class Stack:
 
     def __len__(self):
         return self._len
+
+    def __getitem__(self, item):
+        return self._collection[item]
 
     def append(self, value):
         self._collection.append(value)
