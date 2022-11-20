@@ -33,9 +33,12 @@ class Dot:
 
 a = Dot()
 b = Dot(4, 3)
+# print(a.dist(b))
+# print(dist(a, b))
+# print(Dot.dist(a, b))
+
 p = (3, 7)
-print(Dot.dist(a, b))
 s = Dot.init_from_tuple(p)
-print(s.get_x(), s.get_y())
+# print(s.get_x(), s.get_y())
 # print(dist(a, b))
 # print(a.dist(b))
