@@ -11,14 +11,17 @@ def time_decorator(func):
         return res
     return wrapper
 
+
 @time_decorator
 def odd(a):
     return a % 2
+
 
 @time_decorator
 def foo(x):
     for i in range(x):
         print(i)
+
 
 @time_decorator
 def my_summ(x, y, z):
@@ -30,6 +33,7 @@ def my_summ(x, y, z):
 # print(my_summ(3, 4, 5))
 # print(time.time())
 # print(1/3)
+
 
 # @time_decorator
 @lru_cache(maxsize=None)
