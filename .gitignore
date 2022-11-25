@@ -2,3 +2,4 @@
 *.xml
 .idea/mipt_adv_python_2022-2023.iml
 Lesson_7/pickle_data.bin
+*.iml
