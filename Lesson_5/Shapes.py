@@ -19,8 +19,8 @@ class Point:
         return "[" + str(self._x) + ", " + str(self._y) + "]"
 
 
-def dist(a, b):
-    return ((b.get_y() - a.get_y()) ** 2 + (b.get_x() - a.get_x()) ** 2) ** 0.5
+def dist(p1, p2):
+    return ((p2.get_y() - p1.get_y()) ** 2 + (p2.get_x() - p1.get_x()) ** 2) ** 0.5
 
 
 class Shape:
